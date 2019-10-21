@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 *{margin: 0; padding:0; box-sizing: border-box;}
-html{ height: 100%; line-height: 1.5; font-size: 42.5%; /* =10px */ font-family:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+html{ height: 100%; line-height: 1.5; font-size: 55%; font-weight: bold; /* =10px */ font-family:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
 body{
-	background: #696969;
-	-moz-background: #696969;
-	-webkit-background: #696969;
-	-o-background: #696969;
+	background: #F0FFFF;
+	-moz-background: #F0FFFF;
+	-webkit-background: #F0FFFF;
+	-o-background: #F0FFFF;
 	/*background: #7d7e7d; /* Old browsers */
 	/*background: -moz-radial-gradient(center, ellipse cover,  #EAEAEA 0%, #222 100%); /* FF3.6+ */
 	/*background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#EAEAEA), color-stop(100%,#222)); /* Chrome,Safari4+ */
@@ -20,7 +20,7 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-size: 12px;
+	font-size: 16px;
 	font-size: 2.0rem;
 }
 #f-block,
@@ -52,7 +52,7 @@ body{
     opacity: 1;
     height: auto;
 	padding: 2rem 5rem;
-	background: #D3D3D3;	/* original rgba(255,255,255, .1); */
+	background: #F8F8FF;	/* original rgba(255,255,255, .1); */
 	border-radius: 0%;
 	border: solid 5px #2F4F4F; /* original rgba(255,255,255, .2); */
 }
@@ -202,7 +202,7 @@ table, th, td {			/* added by faisal */
 h1{
 	text-align: center;
 	font-size: 4rem;
-	color: #FFF;
+	color: #000000;
 }
 .by{
 	text-align: center;
