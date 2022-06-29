@@ -1,4 +1,178 @@
-<div class="info" id="H">
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <title>Material Database using Machine Learning</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Extending Shannon’s Ionic Radii Database Using Machine Learning</h1>
+      <h2>https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.5.043804</h2>
+      <div id="periodic-table">
+        <div class="row">
+          <span class="element root"><a href="#H">H</a></span>
+          <!-- Yes, I know, this sucks -->
+          <span class="span-16"></span>
+          <span class="element table"><a href="#He">He</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Li">Li</a></span>
+          <span class="element meta"><a href="#Be">Be</a></span>
+          <span class="span-10"></span>
+          <!--<span class="element form"><a href="#fieldset">fieldset</a></span>-->
+          <span class="element form"><a href="#B">B</a></span>
+          <span class="element doc"><a href="#C">C</a></span>
+          <span class="element doc"><a href="#N">N</a></span>
+          <span class="element doc"><a href="#O">O</a></span>
+          <span class="element table"><a href="#F">F</a></span>
+          <span class="element table"><a href="#Ne">Ne</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Na">Na</a></span>
+          <span class="element meta"><a href="#Mg">Mg</a></span>
+          <span class="span-10"> </span>
+          <!--<span class="element form"><a href="#meter">meter</a></span>-->
+          <span class="element form"><a href="#Al">Al</a></span>
+          <span class="element doc"><a href="#Si">Si</a></span>
+          <span class="element doc"><a href="#P">P</a></span>
+          <span class="element doc"><a href="#S">S</a></span>
+          <span class="element table"><a href="#Cl">Cl</a></span>
+          <span class="element table"><a href="#Ar">Ar</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#K">K</a></span>
+          <span class="element meta"><a href="#Ca">Ca</a></span>
+          <span class="element group"><a href="#Sc">Sc</a></span>
+          <span class="element group"><a href="#Ti">Ti</a></span>
+          <span class="element group"><a href="#V">V</a></span>
+          <span class="element group"><a href="#Cr">Cr</a></span>
+          <span class="element group"><a href="#Mn">Mn</a></span>
+          <span class="element group"><a href="#Fe">Fe</a></span>
+          <span class="element group"><a href="#Co">Co</a></span>
+          <span class="element group"><a href="#Ni">Ni</a></span>
+          <span class="element group"><a href="#Cu">Cu</a></span>
+          <span class="element group"><a href="#Zn">Zn</a></span>
+          <span class="element form"><a href="#Ga">Ga</a></span>
+          <span class="element doc"><a href="#Ge">Ge</a></span>
+          <span class="element doc"><a href="#As">As</a></span>
+          <span class="element doc"><a href="#Se">Se</a></span>
+          <span class="element interactive"><a href="#Br">Br</a></span>
+          <span class="element table"><a href="#Kr">Kr</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Rb">Rb</a></span>
+          <span class="element meta"><a href="#Sr">Sr</a></span>
+          <span class="element group"><a href="#Y">Y</a></span>
+          <span class="element group"><a href="#Zr">Zr</a></span>
+          <span class="element group"><a href="#Nb">Nb</a></span>
+          <span class="element group"><a href="#Mo">Mo</a></span>
+          <span class="element group"><a href="#Tc">Tc</a></span>
+          <span class="element group"><a href="#Ru">Ru</a></span>
+          <span class="element group"><a href="#Rh">Rh</a></span>
+          <span class="element group"><a href="#Pd">Pd</a></span>
+          <span class="element group"><a href="#Ag">Ag</a></span>
+          <span class="element group"><a href="#Cd">Cd</a></span>
+          <span class="element form"><a href="#In">In</a></span>
+          <span class="element doc"><a href="#Sn">Sn</a></span>
+          <span class="element doc"><a href="#Sb">Sb</a></span>
+          <span class="element doc"><a href="#Te">Te</a></span>
+          <span class="element interactive"><a href="#I">I</a></span>
+          <span class="element table"><a href="#Xe">Xe</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Cs">Cs</a></span>
+          <span class="element meta"><a href="#Ba">Ba</a></span>
+          <span class="span-1"></span>
+          <span class="element group"><a href="#Hf">Hf</a></span>
+          <span class="element group"><a href="#Ta">Ta</a></span>
+          <span class="element group"><a href="#W">W</a></span>
+          <span class="element group"><a href="#Re">Re</a></span>
+          <span class="element group"><a href="#Os">Os</a></span>
+          <span class="element group"><a href="#Ir">Ir</a></span>
+          <span class="element group"><a href="#Pt">Pt</a></span>
+          <span class="element group"><a href="#Au">Au</a></span>
+          <span class="element group"><a href="#Hg">Hg</a></span>
+          <span class="element form"><a href="#Tl">Tl</a></span>
+          <span class="element form"><a href="#Pb">Pb</a></span>
+          <span class="element doc"><a href="#Bi">Bi</a></span>
+          <span class="element doc"><a href="#Po">Po</a></span>
+          <span class="element interactive"><a href="#At">At</a></span>
+          <span class="element table"><a href="#Rn">Rn</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Fr">Fr</a></span>
+          <span class="element meta"><a href="#Ra">Ra</a></span>
+          <span class="span-1"></span>
+          <span class="element group"><a href="#Rf">Rf</a></span>
+          <span class="element group"><a href="#Db">Db</a></span>
+          <span class="element group"><a href="#Sg">Sg</a></span>
+          <span class="element group"><a href="#Bh">Bh</a></span>
+          <span class="element group"><a href="#Hs">Hs</a></span>
+          <span class="element group"><a href="#Mt">Mt</a></span>
+          <span class="element group"><a href="#Ds">Ds</a></span>
+          <span class="element group"><a href="#Rg">Rg</a></span>
+          <span class="element group"><a href="#Cn">Cn</a></span>
+          <span class="element form"><a href="#Nh">Nh</a></span>
+          <span class="element form"><a href="#Fl">Fl</a></span>
+          <span class="element form"><a href="#Mc">Mc</a></span>
+          <span class="element doc"><a href="#Lv">Lv</a></span>
+          <span class="element doc"><a href="#Ts">Ts</a></span>
+          <span class="element table"><a href="#Og">Og</a></span>
+        </div>
+      </div>
+      <div id="f-block">
+        <div class="row">
+          <span class="span-2"> </span>
+          <span class="element embed"><a href="#La">La</a></span>
+          <span class="element embed"><a href="#Ce">Ce</a></span>
+          <span class="element embed"><a href="#Pr">Pr</a></span>
+          <span class="element embed"><a href="#Nd">Nd</a></span>
+          <span class="element embed"><a href="#Pm">Pm</a></span>
+          <span class="element embed"><a href="#Sm">Sm</a></span>
+          <span class="element embed"><a href="#Eu">Eu</a></span>
+          <span class="element embed"><a href="#Gd">Gd</a></span>
+          <span class="element embed"><a href="#Tb">Tb</a></span>
+          <span class="element embed"><a href="#Dy">Dy</a></span>
+          <span class="element embed"><a href="#Ho">Ho</a></span>
+          <span class="element embed"><a href="#Er">Er</a></span>
+          <span class="element embed"><a href="#Tm">Tm</a></span>
+          <span class="element embed"><a href="#Yb">Yb</a></span>
+          <span class="element embed"><a href="#Lu">Lu</a></span>
+        </div>
+        <div class="row">
+          <span class="span-2"> </span>
+          <span class="element embed"><a href="#Ac">Ac</a></span>
+          <span class="element embed"><a href="#Th">Th</a></span>
+          <span class="element embed"><a href="#Pa">Pa</a></span>
+          <span class="element embed"><a href="#U">U</a></span>
+          <span class="element embed"><a href="#Np">Np</a></span>
+          <span class="element embed"><a href="#Pu">Pu</a></span>
+          <span class="element embed"><a href="#Am">Am</a></span>
+          <span class="element embed"><a href="#Cm">Cm</a></span>
+          <span class="element embed"><a href="#Bk">Bk</a></span>
+          <span class="element embed"><a href="#Cf">Cf</a></span>
+          <span class="element embed"><a href="#Es">Es</a></span>
+          <span class="element embed"><a href="#Fm">Fm</a></span>
+          <span class="element embed"><a href="#Md">Md</a></span>
+          <span class="element embed"><a href="#No">No</a></span>
+          <span class="element embed"><a href="#Lr">Lr</a></span>
+        </div>
+      </div>
+    </div>
+    <ul class="key">
+      <li><span class="swatch root"></span> s-block elements</li>
+      <li><span class="swatch text"></span> p-block elements</li>
+      <li><span class="swatch group"></span> d-block elements</li>
+      <li><span class="swatch embed"></span> f-block elements</li>
+      <!--<li><span class="swatch meta"></span> Metadata and scripting</li>
+      <li><span class="swatch group"></span> Grouping content</li>
+      <li><span class="swatch doc"></span> Document sections</li>
+      <li><span class="swatch interactive"></span> Interactive elements</li>
+      <li><span class="swatch embed"></span> Embedding content</li>-->
+    </ul>
+    <div id="descriptions">
+      <div class="info" id="H">
   <h3>H</h3>
   <table>
   <thead>
@@ -1289,5 +1463,16 @@
   </tbody>
   </table>
 </div>
-/table>
-</div>
+   </div>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-42027047-3");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>
