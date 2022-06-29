@@ -1,0 +1,1249 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <title>Material Database using Machine Learning</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Extending Shannon’s Ionic Radii Database Using Machine Learning</h1>
+      <h2>https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.5.043804</h2>
+      <div id="periodic-table">
+        <div class="row">
+          <span class="element root"><a href="#H">H</a></span>
+          <!-- Yes, I know, this sucks -->
+          <span class="span-16"></span>
+          <span class="element table"><a href="#He">He</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Li">Li</a></span>
+          <span class="element meta"><a href="#Be">Be</a></span>
+          <span class="span-10"></span>
+          <!--<span class="element form"><a href="#fieldset">fieldset</a></span>-->
+          <span class="element form"><a href="#B">B</a></span>
+          <span class="element doc"><a href="#C">C</a></span>
+          <span class="element doc"><a href="#N">N</a></span>
+          <span class="element doc"><a href="#O">O</a></span>
+          <span class="element table"><a href="#F">F</a></span>
+          <span class="element table"><a href="#Ne">Ne</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Na">Na</a></span>
+          <span class="element meta"><a href="#Mg">Mg</a></span>
+          <span class="span-10"> </span>
+          <!--<span class="element form"><a href="#meter">meter</a></span>-->
+          <span class="element form"><a href="#Al">Al</a></span>
+          <span class="element doc"><a href="#Si">Si</a></span>
+          <span class="element doc"><a href="#P">P</a></span>
+          <span class="element doc"><a href="#S">S</a></span>
+          <span class="element table"><a href="#Cl">Cl</a></span>
+          <span class="element table"><a href="#Ar">Ar</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#K">K</a></span>
+          <span class="element meta"><a href="#Ca">Ca</a></span>
+          <span class="element group"><a href="#Sc">Sc</a></span>
+          <span class="element group"><a href="#Ti">Ti</a></span>
+          <span class="element group"><a href="#V">V</a></span>
+          <span class="element group"><a href="#Cr">Cr</a></span>
+          <span class="element group"><a href="#Mn">Mn</a></span>
+          <span class="element group"><a href="#Fe">Fe</a></span>
+          <span class="element group"><a href="#Co">Co</a></span>
+          <span class="element group"><a href="#Ni">Ni</a></span>
+          <span class="element group"><a href="#Cu">Cu</a></span>
+          <span class="element group"><a href="#Zn">Zn</a></span>
+          <span class="element form"><a href="#Ga">Ga</a></span>
+          <span class="element doc"><a href="#Ge">Ge</a></span>
+          <span class="element doc"><a href="#As">As</a></span>
+          <span class="element doc"><a href="#Se">Se</a></span>
+          <span class="element interactive"><a href="#Br">Br</a></span>
+          <span class="element table"><a href="#Kr">Kr</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Rb">Rb</a></span>
+          <span class="element meta"><a href="#Sr">Sr</a></span>
+          <span class="element group"><a href="#Y">Y</a></span>
+          <span class="element group"><a href="#Zr">Zr</a></span>
+          <span class="element group"><a href="#Nb">Nb</a></span>
+          <span class="element group"><a href="#Mo">Mo</a></span>
+          <span class="element group"><a href="#Tc">Tc</a></span>
+          <span class="element group"><a href="#Ru">Ru</a></span>
+          <span class="element group"><a href="#Rh">Rh</a></span>
+          <span class="element group"><a href="#Pd">Pd</a></span>
+          <span class="element group"><a href="#Ag">Ag</a></span>
+          <span class="element group"><a href="#Cd">Cd</a></span>
+          <span class="element form"><a href="#In">In</a></span>
+          <span class="element doc"><a href="#Sn">Sn</a></span>
+          <span class="element doc"><a href="#Sb">Sb</a></span>
+          <span class="element doc"><a href="#Te">Te</a></span>
+          <span class="element interactive"><a href="#I">I</a></span>
+          <span class="element table"><a href="#Xe">Xe</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Cs">Cs</a></span>
+          <span class="element meta"><a href="#Ba">Ba</a></span>
+          <span class="span-1"></span>
+          <span class="element group"><a href="#Hf">Hf</a></span>
+          <span class="element group"><a href="#Ta">Ta</a></span>
+          <span class="element group"><a href="#W">W</a></span>
+          <span class="element group"><a href="#Re">Re</a></span>
+          <span class="element group"><a href="#Os">Os</a></span>
+          <span class="element group"><a href="#Ir">Ir</a></span>
+          <span class="element group"><a href="#Pt">Pt</a></span>
+          <span class="element group"><a href="#Au">Au</a></span>
+          <span class="element group"><a href="#Hg">Hg</a></span>
+          <span class="element form"><a href="#Tl">Tl</a></span>
+          <span class="element form"><a href="#Pb">Pb</a></span>
+          <span class="element doc"><a href="#Bi">Bi</a></span>
+          <span class="element doc"><a href="#Po">Po</a></span>
+          <span class="element interactive"><a href="#At">At</a></span>
+          <span class="element table"><a href="#Rn">Rn</a></span>
+        </div>
+        <div class="row">
+          <span class="element meta"><a href="#Fr">Fr</a></span>
+          <span class="element meta"><a href="#Ra">Ra</a></span>
+          <span class="span-1"></span>
+          <span class="element group"><a href="#Rf">Rf</a></span>
+          <span class="element group"><a href="#Db">Db</a></span>
+          <span class="element group"><a href="#Sg">Sg</a></span>
+          <span class="element group"><a href="#Bh">Bh</a></span>
+          <span class="element group"><a href="#Hs">Hs</a></span>
+          <span class="element group"><a href="#Mt">Mt</a></span>
+          <span class="element group"><a href="#Ds">Ds</a></span>
+          <span class="element group"><a href="#Rg">Rg</a></span>
+          <span class="element group"><a href="#Cn">Cn</a></span>
+          <span class="element form"><a href="#Nh">Nh</a></span>
+          <span class="element form"><a href="#Fl">Fl</a></span>
+          <span class="element form"><a href="#Mc">Mc</a></span>
+          <span class="element doc"><a href="#Lv">Lv</a></span>
+          <span class="element doc"><a href="#Ts">Ts</a></span>
+          <span class="element table"><a href="#Og">Og</a></span>
+        </div>
+      </div>
+      <div id="f-block">
+        <div class="row">
+          <span class="span-2"> </span>
+          <span class="element embed"><a href="#La">La</a></span>
+          <span class="element embed"><a href="#Ce">Ce</a></span>
+          <span class="element embed"><a href="#Pr">Pr</a></span>
+          <span class="element embed"><a href="#Nd">Nd</a></span>
+          <span class="element embed"><a href="#Pm">Pm</a></span>
+          <span class="element embed"><a href="#Sm">Sm</a></span>
+          <span class="element embed"><a href="#Eu">Eu</a></span>
+          <span class="element embed"><a href="#Gd">Gd</a></span>
+          <span class="element embed"><a href="#Tb">Tb</a></span>
+          <span class="element embed"><a href="#Dy">Dy</a></span>
+          <span class="element embed"><a href="#Ho">Ho</a></span>
+          <span class="element embed"><a href="#Er">Er</a></span>
+          <span class="element embed"><a href="#Tm">Tm</a></span>
+          <span class="element embed"><a href="#Yb">Yb</a></span>
+          <span class="element embed"><a href="#Lu">Lu</a></span>
+        </div>
+        <div class="row">
+          <span class="span-2"> </span>
+          <span class="element embed"><a href="#Ac">Ac</a></span>
+          <span class="element embed"><a href="#Th">Th</a></span>
+          <span class="element embed"><a href="#Pa">Pa</a></span>
+          <span class="element embed"><a href="#U">U</a></span>
+          <span class="element embed"><a href="#Np">Np</a></span>
+          <span class="element embed"><a href="#Pu">Pu</a></span>
+          <span class="element embed"><a href="#Am">Am</a></span>
+          <span class="element embed"><a href="#Cm">Cm</a></span>
+          <span class="element embed"><a href="#Bk">Bk</a></span>
+          <span class="element embed"><a href="#Cf">Cf</a></span>
+          <span class="element embed"><a href="#Es">Es</a></span>
+          <span class="element embed"><a href="#Fm">Fm</a></span>
+          <span class="element embed"><a href="#Md">Md</a></span>
+          <span class="element embed"><a href="#No">No</a></span>
+          <span class="element embed"><a href="#Lr">Lr</a></span>
+        </div>
+      </div>
+    </div>
+    <ul class="key">
+      <li><span class="swatch root"></span> s-block elements</li>
+      <li><span class="swatch text"></span> p-block elements</li>
+      <li><span class="swatch group"></span> d-block elements</li>
+      <li><span class="swatch embed"></span> f-block elements</li>
+      <!--<li><span class="swatch meta"></span> Metadata and scripting</li>
+      <li><span class="swatch group"></span> Grouping content</li>
+      <li><span class="swatch doc"></span> Document sections</li>
+      <li><span class="swatch interactive"></span> Interactive elements</li>
+      <li><span class="swatch embed"></span> Embedding content</li>-->
+    </ul>
+    <div id="descriptions">
+      <div class="info" id="H">
+  <h3>H</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="He">
+  <h3>He</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Li">
+  <h3>Li</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Be">
+  <h3>Be</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="B">
+  <h3>B</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="C">
+  <h3>C</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="N">
+  <h3>N</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="O">
+  <h3>O</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="F">
+  <h3>F</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ne">
+  <h3>Ne</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Na">
+  <h3>Na</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Mg">
+  <h3>Mg</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Al">
+  <h3>Al</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Si">
+  <h3>Si</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="P">
+  <h3>P</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="S">
+  <h3>S</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Cl">
+  <h3>Cl</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ar">
+  <h3>Ar</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="K">
+  <h3>K</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ca">
+  <h3>Ca</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Sc">
+  <h3>Sc</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ti">
+  <h3>Ti</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="V">
+  <h3>V</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Cr">
+  <h3>Cr</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Mn">
+  <h3>Mn</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Fe">
+  <h3>Fe</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Co">
+  <h3>Co</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ni">
+  <h3>Ni</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Cu">
+  <h3>Cu</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Zn">
+  <h3>Zn</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ga">
+  <h3>Ga</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ge">
+  <h3>Ge</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="As">
+  <h3>As</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Se">
+  <h3>Se</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Br">
+  <h3>Br</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Kr">
+  <h3>Kr</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Rb">
+  <h3>Rb</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Sr">
+  <h3>Sr</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Y">
+  <h3>Y</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Zr">
+  <h3>Zr</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Nb">
+  <h3>Nb</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Mo">
+  <h3>Mo</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Tc">
+  <h3>Tc</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ru">
+  <h3>Ru</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Rh">
+  <h3>Rh</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Pd">
+  <h3>Pd</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ag">
+  <h3>Ag</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Cd">
+  <h3>Cd</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="In">
+  <h3>In</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Sn">
+  <h3>Sn</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Sb">
+  <h3>Sb</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Te">
+  <h3>Te</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="I">
+  <h3>I</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Xe">
+  <h3>Xe</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Cs">
+  <h3>Cs</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ba">
+  <h3>Ba</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="La">
+  <h3>La</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ce">
+  <h3>Ce</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Pr">
+  <h3>Pr</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Nd">
+  <h3>Nd</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Pm">
+  <h3>Pm</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Sm">
+  <h3>Sm</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Eu">
+  <h3>Eu</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Gd">
+  <h3>Gd</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Tb">
+  <h3>Tb</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Dy">
+  <h3>Dy</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ho">
+  <h3>Ho</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Er">
+  <h3>Er</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Tm">
+  <h3>Tm</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Yb">
+  <h3>Yb</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Lu">
+  <h3>Lu</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Hf">
+  <h3>Hf</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ta">
+  <h3>Ta</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="W">
+  <h3>W</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Re">
+  <h3>Re</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Os">
+  <h3>Os</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ir">
+  <h3>Ir</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Pt">
+  <h3>Pt</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Au">
+  <h3>Au</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Hg">
+  <h3>Hg</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Tl">
+  <h3>Tl</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Pb">
+  <h3>Pb</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Bi">
+  <h3>Bi</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Po">
+  <h3>Po</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="At">
+  <h3>At</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Rn">
+  <h3>Rn</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Fr">
+  <h3>Fr</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ra">
+  <h3>Ra</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ac">
+  <h3>Ac</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Th">
+  <h3>Th</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Pa">
+  <h3>Pa</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="U">
+  <h3>U</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Np">
+  <h3>Np</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Pu">
+  <h3>Pu</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Am">
+  <h3>Am</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Cm">
+  <h3>Cm</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Bk">
+  <h3>Bk</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Cf">
+  <h3>Cf</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Es">
+  <h3>Es</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Fm">
+  <h3>Fm</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Md">
+  <h3>Md</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="No">
+  <h3>No</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Lr">
+  <h3>Lr</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Rf">
+  <h3>Rf</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Db">
+  <h3>Db</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Sg">
+  <h3>Sg</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Bh">
+  <h3>Bh</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Hs">
+  <h3>Hs</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Mt">
+  <h3>Mt</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ds">
+  <h3>Ds</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Rg">
+  <h3>Rg</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Cn">
+  <h3>Cn</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Nh">
+  <h3>Nh</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Fl">
+  <h3>Fl</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Mc">
+  <h3>Mc</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Lv">
+  <h3>Lv</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Ts">
+  <h3>Ts</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div><div class="info" id="Og">
+  <h3>Og</h3>
+  <table>
+  <thead>
+  <tr><th>Oxidation State</th><th>Coordination Number</th><th>Shannon</th><th>By ML</th><th>Bootstrap std</th><tr>
+  <thead>
+  <tbody>
+  </tbody>
+  </table>
+</div>   </div>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-42027047-3");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>
