@@ -6,17 +6,4 @@ In computational material design, ionic radius is one of the most important phys
 
 
 Please cite :
-  @article{PhysRevMaterials.5.043804,
-  title = {Extending Shannon's ionic radii database using machine learning},
-  author = {Baloch, Ahmer A. B. and Alqahtani, Saad M. and Mumtaz, Faisal and Muqaibel, Ali H. and Rashkeev, Sergey N. and Alharbi, Fahhad H.},
-  journal = {Phys. Rev. Materials},
-  volume = {5},
-  issue = {4},
-  pages = {043804},
-  numpages = {10},
-  year = {2021},
-  month = {Apr},
-  publisher = {American Physical Society},
-  doi = {10.1103/PhysRevMaterials.5.043804},
-  url = {https://link.aps.org/doi/10.1103/PhysRevMaterials.5.043804}
-}
+Baloch, Ahmer AB, et al. "Extending Shannon's ionic radii database using machine learning." Physical Review Materials 5.4 (2021): 043804.
