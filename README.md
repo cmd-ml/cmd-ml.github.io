@@ -6,6 +6,7 @@ In computational material design, the ionic radius is one of the most important 
 
 
 For positive ions, please cite:
+
 [1] Baloch, Ahmer AB, et al. "Extending Shannon's ionic radii database using machine learning." Physical Review Materials 5.4 (2021): 043804.
 [2] Mohammad Alsalman  et. al.,“Outliers in Shannon’s Effective Ionic Radii Table and the the Table Extension by Machine Learning,” Computational Materials Science, vol. 228, p. 112350, 2023.
 
