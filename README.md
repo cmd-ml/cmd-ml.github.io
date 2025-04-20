@@ -13,4 +13,4 @@ In computational material design, the ionic radius is one of the most important 
 
 **For negative ions, please cite:**
 
-[3] Mohammad Alsalman et. al.,“Anions' Radii - New Data Points Calibrated to Match Shannon's Table,” Computational Materials Science, 2024. (The link will appear soon)
+[3] 1.	Mohammad Alsalman, Mahmoud S. Hezam, Saad M. Alqahtani Ahmer A.B. Baloch and Fahhad H. Alharbi, “Anions’ Radii—New data points calibrated to match Shannon’s table,” Comput. Mater. Sci., vol. 244, p. 113153, 2024.
